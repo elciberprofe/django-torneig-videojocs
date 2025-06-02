@@ -14,20 +14,20 @@ Els models del projecte inicialment són: Torneig, Videojoc, Partida, Equip i Ju
 
 ## ✅ Check-list de desenvolupament
 
-- [X] Crear repositori remot (Github) amb README.md
+- [X] Crear repositori remot (Github) amb README.md inicial.
 - [ ] Clonar el repositori remot del projecte.
 - [ ] Crear l'entorn virtual (venv)
 - [ ] Instal·lar les dependències Django, Faker i pillow.
-- [ ] Generar el fitxer de "requirements.txt"
-- [ ] Crear el projecte Django (startproject)
-- [ ] Crear app principal (startapp)
-- [ ] Afegir l'aplicació a "settings.py"
-- [ ] Crear el super usuari i comprovar l'accés a l'Admin Panel.
-- [ ] Crear el model de dades inicial Torneig, Videojoc, Partida, Equip i Jugador.
-- [ ] Realitzar les migracions (makemigrations i migrate).
-- [ ] Formularis (forms.py): Crear tornejos, equips, jugadors, etc.
-- [ ] Views (views.py): Vistes (render) de tornejos, equips i jugadors.
-- [ ] Templates: Carpeta de templates HTML per mostrar informació i formularis.
-- [ ] Urls (urls.py):  Afegir les diferents rutes d'accés de l'aplicació.
+- [ ] Generar el fitxer de ```requirements.txt```
+- [ ] Crear el projecte Django (```startproject```)
+- [ ] Crear l'app principal (```startapp```)
+- [ ] Afegir l'aplicació a ```INSTALLED_APPS``` a ```settings.py```
+- [ ] Crear el superusuari i comprovar l'accés a l'Admin Panel.
+- [ ] Definir i crear el model de dades inicial: Torneig, Videojoc, Partida, Equip i Jugador.
+- [ ] Realitzar les migracions (```makemigrations``` i ```migrate```).
+- [ ] Formularis (```forms.py```): Crear tornejos, equips, jugadors, etc.
+- [ ] Views (```views.py```): Vistes (render) de tornejos, equips i jugadors.
+- [ ] Templates: Crear templates HTML per mostrar informació i formularis.
+- [ ] URLs (```urls.py```):  Afegir les diferents rutes d'accés de l'aplicació.
 - [ ] Seeder: Alimentar la base de dades amb dades fictícies (Faker).
-- [ ] Pujar el projecte a Github i actualitzar el README.md
+- [ ] Pujar el projecte a Github i actualitzar el README.md.
