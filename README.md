@@ -3,15 +3,6 @@
 Projecte que automatitza la gestió de tornejos d'eSports o videojocs.
 Els models del projecte inicialment són: Torneig, Videojoc, Partida, Equip i Jugador.
 
-## 🔧 Tecnologies
-- Django
-- Python
-- SQLite (per defecte)
-- Faker (per seeding de dades)
-- HTML + CSS
-  
----
-
 ## ✅ Check-list de desenvolupament
 
 - [X] Crear repositori remot (Github) amb README.md inicial.
