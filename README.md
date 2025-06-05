@@ -16,9 +16,10 @@ Els models del projecte inicialment són: Torneig, Videojoc, Partida, Equip i Ju
 - [X] 9. Crear el superusuari i comprovar l'accés a l'Admin Panel. 💾 Commit fet (1730a46)
 - [X] 10. Definir i crear el model de dades inicial: Torneig, Videojoc, Partida, Equip i Jugador.
 - [X] 11. Realitzar les migracions (```makemigrations``` i ```migrate```). 💾 Commit fet (d184700)
-- [ ] 12. Formularis (```forms.py```): Crear tornejos, equips, jugadors, etc.
-- [ ] 13. Views (```views.py```): Vistes (render) de tornejos, equips i jugadors.
-- [ ] 14. Templates: Crear templates HTML per mostrar informació i formularis.
-- [ ] 15. URLs (```urls.py```):  Afegir les diferents rutes d'accés de l'aplicació.
-- [ ] 16. Seeder: Alimentar la base de dades amb dades fictícies (Faker).
-- [ ] 17. Pujar el projecte a Github i actualitzar el README.md.
+- [ ] 12. Views (```views.py```): Vistes (render) de tornejos, equips i jugadors.
+- [ ] 13. Templates: Crear templates HTML per mostrar informació i formularis.
+- [ ] 14. URLs (```urls.py```):  Afegir les diferents rutes d'accés de l'aplicació.
+- [ ] 15. Seeder: Alimentar la base de dades amb dades fictícies (Faker).
+- [ ] 16. Formularis (```forms.py```): Crear tornejos, equips, jugadors, etc.
+- [ ] 17. Afegir sistema de registre i login i protegir les rutes.
+- [ ] 18. Pujar el projecte a Github i actualitzar el README.md.
