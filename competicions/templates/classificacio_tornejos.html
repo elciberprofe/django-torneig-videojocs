@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estils_classificacio.css' %}">
+    <title>Classificació dels Tornejos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Classificació General dels Tornejos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posició</th>
+                    <th>Equip</th>
+                    <th>Punts Totals</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for equip, punts in classificacio %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ equip }}</td>
+                    <td>{{ punts }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
