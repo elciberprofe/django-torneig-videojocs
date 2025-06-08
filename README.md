@@ -23,3 +23,9 @@ Els models del projecte inicialment són: Torneig, Videojoc, Partida, Equip i Ju
 - [ ] 16. Formularis (```forms.py```): Crear tornejos, equips, jugadors, etc.
 - [ ] 17. Afegir sistema de registre i login i protegir les rutes.
 - [ ] 18. Pujar el projecte a Github i actualitzar el README.md.
+
+![image](https://github.com/user-attachments/assets/2dab77ea-ca33-4193-94f6-01c1f9c688ab)
+
+![image](https://github.com/user-attachments/assets/f0422536-e042-4889-8252-128d9812c75f)
+
+![image](https://github.com/user-attachments/assets/3285e85e-5611-4072-90bb-9cffb535045f)
