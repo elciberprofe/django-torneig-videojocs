@@ -10,6 +10,22 @@ def llistat_tornejos(request):
         "tornejos": tornejos
     })
 
+#Vista per taula del torneig
+def quadre_torneig(request, torneig_id):
+    torneig = Torneig.objects.get(id=torneig_id)
+    partides = Partida.objects.filter(torneig=torneig).order_by('data_hora')
+
+    # Organitzem les partides per ronda
+    rondes = {'Octaus': [], 'Quarts': [], 'Semifinals': [], 'Final': []}
+    for partida in partides:
+        if partida.ronda in rondes:
+            rondes[partida.ronda].append(partida)
+
+    return render(request, 'quadre_torneig.html', {
+        'torneig': torneig,
+        'rondes': rondes,
+    })
+
 #Mostra el detall d'un torneig (template format: octaus --> quarts --> semis i final)
 #Puntuen per guanyar la ronda 1 punt, 3 punts, 5 punts i 10 punts.
 #Suma 1 punt el perdedor mes enllà d'octaus
@@ -68,6 +84,7 @@ def detall_torneig(request, torneig_id):
     })
 
 
+#Vista per classificació GENERAL
 def calcular_punts_torneig(torneig):
     # Similar a la lògica de detall_torneig per calcular punts per equip en un torneig
     partides = Partida.objects.filter(torneig=torneig)

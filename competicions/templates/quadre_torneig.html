@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estils_classificacio.css' %}">
+    <title>Quadre del Torneig</title>
+    
+</head>
+<body>
+    <div class="container-quadre">
+        <h1>Quadre del Torneig<br>{{ torneig.nom }}</h1>
+
+        <div class="bracket-container">
+            {% for ronda, partides in rondes.items %}
+            <div class="ronda">
+                <h3>{{ ronda }}</h3>
+                {% for partida in partides %}
+                <div class="partida">
+                    <div class="equip {% if partida.puntuacio_equip1 > partida.puntuacio_equip2 %}guanyador{% endif %}">
+                        {{ partida.equip1.nom }}
+                    </div>
+                    <p>vs</p>
+                    <div class="equip {% if partida.puntuacio_equip2 > partida.puntuacio_equip1 %}guanyador{% endif %}">
+                        {{ partida.equip2.nom }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
+
