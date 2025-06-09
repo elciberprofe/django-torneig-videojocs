@@ -20,9 +20,15 @@ Els models del projecte inicialment són: Torneig, Videojoc, Partida, Equip i Ju
 - [X] 13. Templates: Crear templates HTML per mostrar informació i formularis.
 - [X] 14. URLs (```urls.py```):  Afegir les diferents rutes d'accés de l'aplicació.
 - [X] 15. Seeder: Alimentar la base de dades amb dades fictícies (Faker). 💾 Commit fet (144a6cc)
-- [X] 16. Quadre Torneig (```views.py```): Crear la vista i el template del quadre d'un torneig.
-- [X] 17. Afegir sistema de registre i login i protegir les rutes.
-- [ ] 18. Pujar el projecte a Github i actualitzar el README.md.
+- [X] 16. Quadre Torneig (```views.py```): Crear la vista i el template del quadre d'un torneig. 💾 Commit fet (51116f0)
+- [X] 17. Afegir sistema de registre i login i protegir les rutes. 💾 Commit fet (956f740)
+- [X] 18. Pujar el projecte a Github i actualitzar el README.md.
+
+![image](https://github.com/user-attachments/assets/4f1f1d61-7751-459d-9474-b006f76334bb)
+
+![image](https://github.com/user-attachments/assets/8692839c-683a-4d56-be4d-421de8b768ea)
+
+![image](https://github.com/user-attachments/assets/32c204cd-770a-4c23-a022-85c1126352a1)
 
 ![image](https://github.com/user-attachments/assets/2dab77ea-ca33-4193-94f6-01c1f9c688ab)
 
