@@ -128,3 +128,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#Autenticació amb Django
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'classificacio'
+LOGOUT_REDIRECT_URL = 'login'

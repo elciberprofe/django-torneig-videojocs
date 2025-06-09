@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from competicions import views
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('tornejos/', views.llistat_tornejos, name='llistat_tornejos'),
     path('quadre/<int:torneig_id>/', views.quadre_torneig, name='quadre_torneig'),
     path('tornejos/<int:torneig_id>/', views.detall_torneig, name='detall_torneig'),

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicia Sessió</title>
+    <link rel="stylesheet" href="{% static 'estils_login.css' %}">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Gestor de Tornejos d'eSports</h1>
+        <h2>Inicia sessió</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>

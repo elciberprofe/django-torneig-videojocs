@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q, Sum, Count
+from django.contrib.auth.decorators import login_required
 from collections import defaultdict
 from .models import *
+
 
 #Mostra un llistat amb tots els tornejos creats
 def llistat_tornejos(request):
@@ -11,6 +13,7 @@ def llistat_tornejos(request):
     })
 
 #Vista per taula del torneig
+@login_required
 def quadre_torneig(request, torneig_id):
     torneig = Torneig.objects.get(id=torneig_id)
     partides = Partida.objects.filter(torneig=torneig).order_by('data_hora')
@@ -29,6 +32,7 @@ def quadre_torneig(request, torneig_id):
 #Mostra el detall d'un torneig (template format: octaus --> quarts --> semis i final)
 #Puntuen per guanyar la ronda 1 punt, 3 punts, 5 punts i 10 punts.
 #Suma 1 punt el perdedor mes enllà d'octaus
+@login_required
 def detall_torneig(request, torneig_id):
     torneig = get_object_or_404(Torneig, pk=torneig_id)
     
@@ -84,7 +88,7 @@ def detall_torneig(request, torneig_id):
     })
 
 
-#Vista per classificació GENERAL
+#Funció de la Vista per classificació GENERAL
 def calcular_punts_torneig(torneig):
     # Similar a la lògica de detall_torneig per calcular punts per equip en un torneig
     partides = Partida.objects.filter(torneig=torneig)
@@ -117,7 +121,8 @@ def calcular_punts_torneig(torneig):
 
     return puntuacio
 
-
+#Vista classificació general
+@login_required
 def classificacio_tornejos(request):
     tornejos = Torneig.objects.all()
 
